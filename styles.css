@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    justify-content: center;
+    background-color: rgba(59, 57, 55, 0.25);
+}
+header{
+    margin-top: 25px;
+}
+header img{
+    width: 800px;
+    height: 100px;
+}
+.links{
+    padding: 10px 0 10px 0;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.links ul li{
+    padding: 5px 20px 5px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.links ul li:hover{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+.promotion{
+    background-image:linear-gradient(rgba(85, 77, 69, 0.25), rgba(59,57,55,0.25)), url("/jewelry_1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: inherit;
+    border-radius: 15px;
+    color: white;
+    transition: 0.5s;
+}
+.promotion:hover{
+    transform: scale(1.05);
+}
+.promotiontext{
+    padding: 140px 0 0 10px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.feature{
+    background-color: rgba(226, 221, 216, 0.719);
+    display: grid;
+    border: solid 2px #545454;
+    border-radius: 5%;
+    width: 200px;
+    text-align: center;
+    align-content: space-between;
+    justify-items: center;
+}
+.feature button{
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.feature button:link{
+    color: aquamarine;
+}
+.feature button:hover{
+    background-color: black;
+    color: white;
+}
+.featuretext{
+    margin: 0 5px 7px 5px;
+    height: 100%;
+}
+.feature img{
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    
+}
+.feature img:hover{
+    transform: scale(1.05);
+    border: solid 4px azure;
+    transition: 0.5s;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footerlogo img{
+    width: 200px;
+    height: 100px;
+}
+@media (max-width: 1000px){
+    header{
+        position: center;
+    }
+    header img{
+        width: 400px;
+        height: 50px;
+    }
+    .features{
+        display: block;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .promotiontext{
+        padding: 120px 0 0 5px;
+    }
+    .feature{
+        width: auto;
+        margin-top: 15px;
+    }
+    footer{
+        padding: 0 10px 0 10px;
+    }
+    .footerlogo img{
+        width: 120px;
+        height: 60px;
+    }
+}
